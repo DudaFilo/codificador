@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="corpo">
+    <header>
+        <img src="Frame 6.png" alt="Logo Alura">
+    </header>
+
+    <main class="principal">
+        <section class="principal__campo">
+            <textarea id="text" class="principal__campo__texto" type="text" name="text-input" placeholder="Digite aqui"></textarea>
+            <label for="text">Apenas letras minúsculas e sem acento.</label>
+                <div class="botoes">
+                    <button id="botao1" onclick="btnCriptografar()" class="botao1" name="button">Criptografar</button>
+                    <button id="botao2" onclick="btnDescriptografar()" class="botao2" name="button">Descriptografar</button>
+                </div>
+        </section>
+        <section class="resultado">
+            <div>
+                <img id="imagem" class="foto" src="High-quality-products-1-1.png" alt="Texto não encontrado">
+                <textarea id="text-output" class="resultado__texto"></textarea>
+                <button id="btnCopiar" onclick="copiar()" class="botao__copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Eduarda B. M.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

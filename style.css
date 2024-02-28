@@ -1,0 +1,129 @@
+.corpo {
+    background-color: rgb(228, 241, 246);
+    height: 100vh;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 20px 80px;
+}
+
+.principal__campo {
+    width: 600px;
+    height: 600px;
+    align-items: flex-start;
+    gap: 10%;
+}
+
+.principal__campo__texto {
+    width: 600px;
+    height: 500px;
+    border: 2px solid rgb(8, 18, 160);
+    border-radius: 2%;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botao1 {
+    background-color: rgb(8, 18, 160); 
+    border: 2px solid rgb(8, 18, 160);
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1,25rem;
+    font-weight: 500;
+    padding: 12px 0;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    color:aliceblue;
+    transition: all 0.5s;
+}
+
+.botao2 {
+    background-color: #D8DFE8;
+    border: 2px solid rgb(8, 18, 160);
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1,25rem;
+    font-weight: 500;
+    padding: 12px 0;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    color: rgb(8, 18, 160);
+    transition: all 0.5s;
+}
+
+.resultado{
+    width: 600px;
+    height: 600px;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+.resultado__texto {
+    width: 600px;
+    height: 500px;
+    border: 2px solid rgb(8, 18, 160);
+    border-radius: 2%;
+}
+
+.botao__copiar {
+    background-color: #D8DFE8;
+    border: 2px solid rgb(8, 18, 160);
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1,25rem;
+    font-weight: 500;
+    padding: 12px 0;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    color: rgb(8, 18, 160);
+    transition: all 0.5s;
+}
+
+.rodape {
+    background-color: rgb(228, 241, 246);
+    padding: 2%;
+    text-align: center;
+}
+
+.rodape__texto {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .corpo {
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 5%;
+        margin: 5%;
+        width: 90%;
+    }
+    .principal {
+        align-items: center;
+        flex-direction: column;
+    }
+    .rodape {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(228, 241, 246);
+        padding: 8px;
+        text-align: center;
+    }
+}
